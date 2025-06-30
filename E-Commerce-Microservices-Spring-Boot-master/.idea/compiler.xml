@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-microservice" />
+        <module name="Ecommerce-Microservices" />
+        <module name="config-microservice" />
+        <module name="gateway-microservice" />
+        <module name="auth-microservice" />
+        <module name="user-microservice" />
+        <module name="payment-microservice" />
+      </profile>
+      <profile name="Annotation profile for catalogue-microservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.0.Beta1/mapstruct-processor-1.6.0.Beta1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.6.0.Beta1/mapstruct-1.6.0.Beta1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+        </processorPath>
+        <module name="catalogue-microservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order-microservice" target="17" />
+      <module name="paiment-microservice" target="17" />
+      <module name="security-microservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OrderService" options="-parameters" />
+      <module name="OrderService.main" options="-parameters" />
+      <module name="OrderService.test" options="-parameters" />
+      <module name="auth-microservice" options="-parameters" />
+      <module name="catalogue-microservice" options="-parameters" />
+      <module name="config-microservice" options="-parameters" />
+      <module name="eureka-microservice" options="-parameters" />
+      <module name="gateway-microservice" options="-parameters" />
+      <module name="order-microservice" options="-parameters" />
+      <module name="payment-microservice" options="-parameters" />
+      <module name="user-microservice" options="-parameters" />
+    </option>
+  </component>
+</project>
